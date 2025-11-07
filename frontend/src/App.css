@@ -52,9 +52,33 @@ html {
   background: #0891b2;
 }
 
-/* Hide Emergent branding */
+/* Hide Emergent branding - aggressive removal */
 [data-testid*="emergent"],
-[class*="emergent-branding"],
-div[style*="position: fixed"][style*="bottom: 20px"][style*="right: 20px"] {
+[data-testid*="Emergent"],
+[class*="emergent"],
+[class*="Emergent"],
+iframe[style*="position: fixed"],
+div[style*="position: fixed"][style*="bottom"],
+div[style*="position: fixed"][style*="right: 20px"],
+div[style*="z-index: 2147483647"],
+button[style*="position: fixed"][style*="bottom"],
+a[style*="position: fixed"][style*="bottom"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Additional targeting for dynamic elements */
+body > div:last-child:not(#root),
+body > a:last-child,
+body > button:last-child {
+  display: none !important;
+}
+
+/* Prevent Emergent branding from showing */
+*[class*="emergent" i],
+*[id*="emergent" i],
+*[data-*="emergent" i] {
   display: none !important;
 }
