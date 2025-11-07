@@ -9,6 +9,10 @@ const Footer = () => {
     { name: 'App Development', slug: 'app-development' },
     { name: 'Digital Marketing', slug: 'digital-marketing-services' },
     { name: 'Enquiry Generation', slug: 'enquiry-generation-services' },
+    { name: 'Search Engine Optimization', slug: 'search-engine-optimization' },
+    { name: 'App Marketing', slug: 'app-marketing' },
+    { name: 'Content Marketing', slug: 'content-marketing' },
+    { name: 'PPC/Paid Marketing', slug: 'ppc-paid-marketing' },
   ];
 
   const majorCities = [
