@@ -12,6 +12,10 @@ const ServicesSection = ({ services, loading }) => {
     'app-development': Smartphone,
     'digital-marketing-services': TrendingUp,
     'enquiry-generation-services': Target,
+    'search-engine-optimization': Search,
+    'app-marketing': Megaphone,
+    'content-marketing': FileText,
+    'ppc-paid-marketing': DollarSign,
   };
 
   if (loading) {
