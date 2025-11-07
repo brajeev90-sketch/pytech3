@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Palette, Globe, Smartphone, TrendingUp, Target, ArrowRight } from 'lucide-react';
+import { Palette, Globe, Smartphone, TrendingUp, Target, ArrowRight, Search, Megaphone, FileText, DollarSign } from 'lucide-react';
 
 const ServicesSection = ({ services, loading }) => {
   const navigate = useNavigate();
